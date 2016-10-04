@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
-        
         <!-- Navbar (sit on top) -->
         <div class="w3-top">
             <ul class="w3-navbar" id="myNavbar">
@@ -46,8 +45,8 @@
             <p>Boston Photohrapy is a Photography company that is ran by a single person currently. Our goal is to capture the memories in your life that you want to look back on and remember forever. 
             In order for us to do this we will need to get to know you and what you are all about after all these are your memories and we want to capture them in just the right way that they describe you and what you are feeling in the moment and time that we are freezing.
             If we are going to be learning about who you are you should be able to get to know your photographer.</p>
+            
             <div class="w3-row">
-                <br>
                 <p class="w3-center"><em>Our Staff</em></p>
                 <div class="w3-col m6 w3-center w3-section">
                     <p class="w3-center"><b>Brendon Peixoto</b></p><br>
@@ -55,7 +54,7 @@
                 </div>
                 
                 <!-- Hide this text on small devices -->
-                <div class="w3-col m6 w3-section">
+                <div class="w3-col w3-hide m6 w3-section">
                     <p>Hi! I'm Brendon! I am a highschool student that has a passion for photography. No matter what I am doing weather I am hanging out with my friends, or I am going for a walk with my dog I always bring my camera. 
                     I am always trying to capture every second of my life so I can look back at it one day. This is mainly caused by my nostalgic nature, so in order for me to embrace that part of me I thought that there is no better way to  so other than freeze that moment in time.
                     My goal is create memories for people so one day you can look back at those memories and relive that specific moment in your life.</p>
@@ -78,34 +77,34 @@
             <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
             <div class="w3-row-padding w3-center">
                 <div class="w3-col m3">
-                    <img src="img_p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
                 <div class="w3-col m3">
-                    <img src="img_p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
                 <div class="w3-col m3">
-                    <img src="img_p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
                 <div class="w3-col m3">
-                    <img src="img_p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
             </div>
             
             <div class="w3-row-padding w3-center w3-section">
                 <div class="w3-col m3">
-                    <img src="img_p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
                 
                 <div class="w3-col m3">
-                    <img src="img_p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
                 
                 <div class="w3-col m3">
-                    <img src="img_p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
                 
                 <div class="w3-col m3">
-                    <img src="img_p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                    <img src="#" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
                 </div>
             </div>
         </div>
@@ -153,27 +152,28 @@
             <input clss="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
             <button class="w3-btn w3-section w3-right">SEND</button>
             </div>
-        </div>
-    </div>
-<script type="text/javascript">
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-</script>
-
-</body>
+            </div>
+            </div>
+    
+        <script type="text/javascript">
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+    
+        // Change style of navbar on scroll
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+            }
+            else {
+                navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+            }
+        }
+        </script>
+    </body>
 </html>
 
